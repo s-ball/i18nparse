@@ -1,0 +1,149 @@
+# Translation for module argparse
+# Copyright (C) 2018 s-ball
+# s-ball <s-ball@laposte.net>, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2018-11-09 18:41+0100\n"
+"PO-Revision-Date: 2018-11-09 19:10+0100\n"
+"Last-Translator: s-ball <s-ball@laposte.net>\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: ..\cpython\Lib\argparse.py:294
+msgid "usage: "
+msgstr "usage : "
+
+#: ..\cpython\Lib\argparse.py:836
+msgid ".__call__() not defined"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1139
+msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1193
+msgid "argument \"-\" with mode %r"
+msgstr "argument \"-\" avec mode %r"
+
+#: ..\cpython\Lib\argparse.py:1201
+msgid "can't open '%s': %s"
+msgstr "impossible d'ouvrir '%s': %s"
+
+#: ..\cpython\Lib\argparse.py:1405
+msgid "cannot merge actions - two groups are named %r"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1443
+msgid "'required' is an invalid argument for positionals"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1465
+msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
+msgstr "option  %(option)r invalide : doit commencer par un caractère %(prefix_chars)r"
+
+#: ..\cpython\Lib\argparse.py:1485
+msgid "dest= is required for options like %r"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1502
+msgid "invalid conflict_resolution value: %r"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1523
+msgid "conflicting option string: %s"
+msgstr "option en conflit : %s"
+
+#: ..\cpython\Lib\argparse.py:1524
+msgid "conflicting option strings: %s"
+msgstr "options en conflit : %s"
+
+#: ..\cpython\Lib\argparse.py:1586
+msgid "mutually exclusive arguments must be optional"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1649
+msgid "positional arguments"
+msgstr "arguments positionnels"
+
+#: ..\cpython\Lib\argparse.py:1650
+msgid "optional arguments"
+msgstr "arguments optionnels"
+
+#: ..\cpython\Lib\argparse.py:1665
+msgid "show this help message and exit"
+msgstr "affiche ce message et termine le programme"
+
+#: ..\cpython\Lib\argparse.py:1696
+msgid "cannot have multiple subparser arguments"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:1748 ..\cpython\Lib\argparse.py:2254
+msgid "unrecognized arguments: %s"
+msgstr "arguments non reconnues : %s"
+
+#: ..\cpython\Lib\argparse.py:1845
+msgid "not allowed with argument %s"
+msgstr "interdit avec l'argument %s"
+
+#: ..\cpython\Lib\argparse.py:1891 ..\cpython\Lib\argparse.py:1905
+msgid "ignored explicit argument %r"
+msgstr "argument explicte %r ignoré"
+
+#: ..\cpython\Lib\argparse.py:2012
+msgid "the following arguments are required: %s"
+msgstr "les arguments suivants sont exigés: %s"
+
+#: ..\cpython\Lib\argparse.py:2027
+msgid "one of the arguments %s is required"
+msgstr "un des arguments %s est exigé"
+
+#: ..\cpython\Lib\argparse.py:2070
+msgid "expected one argument"
+msgstr "un argument est attendu"
+
+#: ..\cpython\Lib\argparse.py:2071
+msgid "expected at most one argument"
+msgstr "au plus un argument est attendu"
+
+#: ..\cpython\Lib\argparse.py:2072
+msgid "expected at least one argument"
+msgstr "au moins un argument est attendu"
+
+#: ..\cpython\Lib\argparse.py:2077
+msgid "expected %s argument"
+msgstr "%s argument attendu"
+
+#: ..\cpython\Lib\argparse.py:2078
+msgid "expected %s arguments"
+msgstr "%s arguments attendus"
+
+#: ..\cpython\Lib\argparse.py:2134
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "option ambiguë : %(option)s pourrait correspondre à %(matches)s"
+
+#: ..\cpython\Lib\argparse.py:2197
+msgid "unexpected option string: %s"
+msgstr "option inattendue : %s"
+
+#: ..\cpython\Lib\argparse.py:2394
+msgid "%r is not callable"
+msgstr ""
+
+#: ..\cpython\Lib\argparse.py:2411
+msgid "invalid %(type)s value: %(value)r"
+msgstr "valeur %(type)s invalide : %(value)r"
+
+#: ..\cpython\Lib\argparse.py:2422
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr "choix invalide : %(value)r (choix parmi %(choices)s)"
+
+#: ..\cpython\Lib\argparse.py:2498
+msgid ""
+"%(prog)s: error: %(message)s\n"
+msgstr "%(prog)s: erreur: %(message)s\n"
