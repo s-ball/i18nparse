@@ -3,6 +3,7 @@ from pkg_resources import parse_version
 from distutils.command.build import build as _build
 import os.path
 import re
+import sys
 
 from io import open
 
@@ -23,21 +24,21 @@ with open("README.md") as fd:
     long_description += next(fd).replace("latest", BASE)
     long_description += "".join(fd)
 
+sys.path.append(os.path.join(os.path.dirname(__file__), "tools_i18n"))
+import msgfmt
 from distutils.command.build import build as _build
 
 class Builder(_build):
     def run(self):
-        from babel.messages.frontend import compile_catalog
-        print(os.getcwd(), self.distribution.get_option_dict('compile_catalog'))
-        compiler = compile_catalog(self.distribution)
-        compiler.domain = ["argparse"]
-        os.makedirs(os.path.join(self.build_lib, NAME, "locale",
-                                 "fr", "LC_MESSAGES"),
-                  exist_ok=True)
-        compiler.directory = os.path.join(self.build_lib, NAME, "locale")
-        compiler.input_file = os.path.join("src", "argparse_fr.po")
-        compiler.locale = "fr"
-        compiler.run()
+        po = re.compile(r"(.*)_(.*).po")
+        for file in os.listdir("src"):
+            m = po.match(file)
+            if m:
+                path = os.path.join(self.build_lib, NAME, "locale",
+                                 m.group(2), "LC_MESSAGES")
+                os.makedirs(path, exist_ok=True)
+                msgfmt.make(os.path.join("src", file),
+                            os.path.join(path, m.group(1) + ".mo"))
         _build.run(self)
         
 setup(
@@ -73,7 +74,5 @@ setup(
     python_requires=">=3",
     test_suite = "tests",
     package_data = { "": ["LICEN[CS]E*", "locale/*/*/*.mo"]},
-    install_requires = ["babel"],
-    setup_requires = ["babel"],
     cmdclass = {"build": Builder},
     )
