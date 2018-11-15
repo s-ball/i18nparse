@@ -1,0 +1,6 @@
+Release 0.5.0: First published version
+Add this CHANGES.txt file
+Fixes on the README file.
+
+Release 0.1.0: First useable version (not published on PyPI)
+Contains only a French translation for the argparse module

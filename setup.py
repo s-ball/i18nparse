@@ -47,7 +47,7 @@ setup(
     description = "Provides translations for argparse module",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    packages = find_packages(exclude = ["tests", "docs", "src"]),
+    packages = find_packages(exclude = ["src"]),
     author="s-ball",
     author_email = "s-ball@laposte.net",
     url = "https://github.com/s-ball/i18nparse",
@@ -57,7 +57,7 @@ setup(
             "https://github.com/s-ball/i18n/blob/master/CHANGES.txt"
         },
     classifiers = [
-        "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 4 - Beta",
         "Natural Language :: French",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.3",
@@ -72,7 +72,6 @@ setup(
         "Topic :: Software Development :: Internationalization",
         ],
     python_requires=">=3",
-    test_suite = "tests",
     package_data = { "": ["LICEN[CS]E*", "locale/*/*/*.mo"]},
     cmdclass = {"build": Builder},
     )
