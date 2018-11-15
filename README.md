@@ -3,8 +3,8 @@ Localization of the Python argparse module
 
 ## Current status
 Only the French language translation is provided.
-The binary wheel file contains litte endian mo translation files.
-Users of big endian systems should use the source distribution to generate the mo files on their own system.
+
+The binary wheel file contains litte endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
 
 ## Goals
 The argparse module makes it easy to write user-friendly command-line interfaces. Specifically, it automatically generates help and usage messages and issues errors when users give the program invalid arguments. Unfortunately, even if the module is able to use `gettext` type localization strings, none is provided by the standard library.
@@ -47,7 +47,7 @@ Example:
 import argparse
 import i18nparse
 
-i18nparse.activate()                # Ok use current locale (must exist)
+i18nparse.activate()     # Ok use current locale (if translation file exists)
 
 parser = argparse.ArgumentParser('foo')
 parser.print_help()      # displays the help message for the current locale

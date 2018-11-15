@@ -54,7 +54,7 @@ setup(
     license = "MIT License",
     project_urls = {
         "Changelog":
-            "https://github.com/s-ball/i18n/blob/master/CHANGES.txt"
+            "https://github.com/s-ball/i18nparse/blob/master/CHANGES.txt"
         },
     classifiers = [
         "Development Status :: 4 - Beta",
