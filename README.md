@@ -22,7 +22,7 @@ With pip: `pip install i18nparse`.
 If you want to contribute, you should get a copy of the full tree from [GitHUB](https://github.com/s-ball/i18nparse):
 
 ```
-git clone https://github.com/s-ball/i18nparse [your_working_copy_folder]
+git clone https://github.com/s-ball/i18nparse.git [your_working_copy_folder]
 ```
 
 ## Usage
