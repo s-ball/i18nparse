@@ -1,5 +1,5 @@
 include README.md
 include i18nparse/LICEN[CS]E*
-include i18nparse/locale/*/*/*.mo
-include src/*
+include src/*.po
+include src/*.pot
 include tools_i18n/*

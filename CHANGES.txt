@@ -1,3 +1,7 @@
+Release 0.6.0:
+Uses getlocale instead of getdefaultlocale
+Fixes a pip uninstall problem when installing from a source distribution
+
 Release 0.5.0: First published version
 Add this CHANGES.txt file
 Fixes on the README file.

@@ -26,10 +26,11 @@ with open("README.md") as fd:
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "tools_i18n"))
 import msgfmt
-from distutils.command.build import build as _build
+from setuptools.command.build_py import build_py as _build
 
 class Builder(_build):
     def run(self):
+        self.__mo_files = []
         po = re.compile(r"(.*)_(.*).po")
         for file in os.listdir("src"):
             m = po.match(file)
@@ -37,10 +38,12 @@ class Builder(_build):
                 path = os.path.join(self.build_lib, NAME, "locale",
                                  m.group(2), "LC_MESSAGES")
                 os.makedirs(path, exist_ok=True)
-                msgfmt.make(os.path.join("src", file),
-                            os.path.join(path, m.group(1) + ".mo"))
+                mofile = os.path.join(path, m.group(1) + ".mo")
+                msgfmt.make(os.path.join("src", file), mofile)
+                self.__mo_files.append(mofile)
         _build.run(self)
-        
+    def get_outputs(self):
+        return _build.get_outputs(self) + self.__mo_files
 setup(
     name=NAME,
     version = VERSION,
@@ -73,5 +76,5 @@ setup(
         ],
     python_requires=">=3",
     package_data = { "": ["LICEN[CS]E*", "locale/*/*/*.mo"]},
-    cmdclass = {"build": Builder},
+    cmdclass = {"build_py": Builder},
     )

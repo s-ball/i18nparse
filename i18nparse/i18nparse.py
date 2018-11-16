@@ -15,7 +15,7 @@ If lang is None, then the language of locale.getdefaultlocale() is used.
 If the translation file does not exist, the original messages will be used.
 """
     if lang is None:
-        lang = locale.getdefaultlocale()[0]
+        lang = locale.getlocale()[0]
     tr = gettext.translation("argparse", os.path.join(locpath, "locale"),
                              [lang], fallback=True)
     argparse._ = tr.gettext

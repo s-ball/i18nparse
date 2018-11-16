@@ -33,7 +33,7 @@ The `i18nparse` module defines 2 functions:
 def activate(lang = None)
 ```
 
-which activates the usage of the translation for the required language. By default, the language for `locale.getdefaultlocale()` is used.
+which activates the usage of the translation for the required language. By default, the language for `locale.getlocale()` is used.
 
 ```
 def deactivate()
