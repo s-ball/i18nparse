@@ -1,3 +1,6 @@
+Release 0.7.0: Use mo_installer to compile po file
+LICENSE file has been moved to top level folder
+
 Release 0.6.0:
 Uses getlocale instead of getdefaultlocale
 Fixes a pip uninstall problem when installing from a source distribution
