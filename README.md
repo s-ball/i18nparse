@@ -33,7 +33,12 @@ The `i18nparse` module defines 2 functions:
 def activate(lang = None)
 ```
 
-which activates the usage of the translation for the required language. By default, the language for `locale.getlocale()` is used.
+which activates the usage of the translation for the required language.
+By default, the language for `locale.getlocale()` is used.
+Note: In order to use the expected locale, it should be loaded prior to
+the call to `activate` with `locale.setlocale(locale.LC_ALL, locale_name)`
+where `locale_name` is the name of a known locale or `''` (empty string) for
+the default locale.
 
 ```
 def deactivate()
@@ -46,7 +51,9 @@ Example:
 ```
 import argparse
 import i18nparse
+import locale
 
+locale.setlocale(locale.LC_ALL, '') # sets a locale
 i18nparse.activate()     # Ok use current locale (if translation file exists)
 
 parser = argparse.ArgumentParser('foo')

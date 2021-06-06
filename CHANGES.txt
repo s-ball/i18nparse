@@ -1,3 +1,6 @@
+Release 0.7.1: Correctly handles the C locale.
+Fixes issue #3
+
 Release 0.7.0: Use mo_installer to compile po file
 LICENSE file has been moved to top level folder
 
