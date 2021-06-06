@@ -16,10 +16,11 @@ If the translation file does not exist, the original messages will be used.
 """
     if lang is None:
         lang = locale.getlocale()[0]
-    tr = gettext.translation("argparse", os.path.join(locpath, "locale"),
-                             [lang], fallback=True)
-    argparse._ = tr.gettext
-    argparse.ngettext = tr.ngettext
+    if lang is not None:
+        tr = gettext.translation("argparse", os.path.join(locpath, "locale"),
+                                 [lang], fallback=True)
+        argparse._ = tr.gettext
+        argparse.ngettext = tr.ngettext
 
 def deactivate():
     """Revert to original messages"""
