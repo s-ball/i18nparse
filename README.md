@@ -2,7 +2,8 @@
 Localization of the Python argparse module
 
 ## Current status
-Only the French language translation is provided.
+Only the French language translation was initialy provided. Thanks to [anselmobd](https://github.com/anselmobd) and [blackstream-x](https://github.com/blackstream-x),
+the project now contains Portuguese and German language translations.
 
 The binary wheel file contains litte endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
 
