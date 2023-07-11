@@ -1,0 +1,182 @@
+# German translations for argparse module (Python release 3.11.2).
+# Copyright (C) 2018 s-ball
+# This file is distributed under the same license as the i18nparse package.
+# s-ball <s-ball@laposte.net>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: i18nparse\n"
+"Report-Msgid-Bugs-To: s-ball@laposte.net\n"
+"POT-Creation-Date: 2023-03-23 14:43+0100\n"
+"PO-Revision-Date: 2023-03-23 15:46+0100\n"
+"Last-Translator: blackstream-x <rz498sc@gmx.net>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: argparse.py:299
+msgid "usage: "
+msgstr "Aufruf: "
+
+#: argparse.py:769
+#, python-format
+msgid "argument %(argument_name)s: %(message)s"
+msgstr "Parameter %(argument_name)s: %(message)s"
+
+#: argparse.py:875
+msgid ".__call__() not defined"
+msgstr ".__call__() ist undefiniert"
+
+#: argparse.py:1185
+#, python-format
+msgid "conflicting subparser: %s"
+msgstr "Subparser im Konflikt: %s"
+
+#: argparse.py:1189
+#, python-format
+msgid "conflicting subparser alias: %s"
+msgstr "Subparser-Alias im Konflikt: %s"
+
+#: argparse.py:1224
+#, python-format
+msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
+msgstr "unbekannter Parser %(parser_name)r (Auswahl aus %(choices)s)"
+
+#: argparse.py:1284
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr "Parameter \"-\" mit Zugriffsart %r"
+
+#: argparse.py:1293
+#, python-format
+msgid "can't open '%(filename)s': %(error)s"
+msgstr "kann '%(filename)s' nicht öffnen: %(error)s"
+
+#: argparse.py:1502
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr "kann Aktionen nicht zusammenführen - zwei Gruppen haben den gleichen Namen %r"
+
+#: argparse.py:1540
+msgid "'required' is an invalid argument for positionals"
+msgstr "'required' ist in Verbindung mit Positionsparametern ungültig"
+
+#: argparse.py:1562
+#, python-format
+msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
+msgstr "Option %(option)r ungültig: muss mit einem Zeichen %(prefix_chars)r beginnen"
+
+#: argparse.py:1580
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr "dest= wird bei Optionen wie %r benötigt"
+
+#: argparse.py:1597
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr "ungültiger Wert für conflict_resolution: %r"
+
+#: argparse.py:1615
+#, python-format
+msgid "conflicting option string: %s"
+msgid_plural "conflicting option strings: %s"
+msgstr[0] "Option steht im Konflikt: %s"
+msgstr[1] "Optionen stehen im Konflikt: %s"
+
+#: argparse.py:1689
+msgid "mutually exclusive arguments must be optional"
+msgstr "sich gegenseitig ausschließende Parameter müssen optional sein"
+
+#: argparse.py:1765
+msgid "positional arguments"
+msgstr "Positionsparameter"
+
+#: argparse.py:1766
+msgid "options"
+msgstr "Optionen"
+
+#: argparse.py:1781
+msgid "show this help message and exit"
+msgstr "diese Meldung anzeigen und beenden"
+
+#: argparse.py:1812
+msgid "cannot have multiple subparser arguments"
+msgstr "mehrfache Subparser werden nicht unterstützt"
+
+#: argparse.py:1864 argparse.py:2377
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr "Parameter nicht erkannt: %s"
+
+#: argparse.py:1964
+#, python-format
+msgid "not allowed with argument %s"
+msgstr "in Verbindung mit Parameter %s nicht erlaubt"
+
+#: argparse.py:2014 argparse.py:2028
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr "expliziten Parameter %r ignoriert"
+
+#: argparse.py:2135
+#, python-format
+msgid "the following arguments are required: %s"
+msgstr "die folgenden Parameter werden benötigt: %s"
+
+#: argparse.py:2150
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr "einer der Parameter %s wird benötigt"
+
+#: argparse.py:2192
+msgid "expected one argument"
+msgstr "genau ein Parameter wird erwartet"
+
+#: argparse.py:2193
+msgid "expected at most one argument"
+msgstr "höchstens ein Parameter wird erwartet"
+
+#: argparse.py:2194
+msgid "expected at least one argument"
+msgstr "mindestens ein Parameter wird erwartet"
+
+#: argparse.py:2198
+#, python-format
+msgid "expected %s argument"
+msgid_plural "expected %s arguments"
+msgstr[0] "%s Parameter wird erwartet"
+msgstr[1] "%s Parameter werden erwartet"
+
+#: argparse.py:2256
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "Option nicht eindeutig: %(option)s passt auf %(matches)s"
+
+#: argparse.py:2320
+#, python-format
+msgid "unexpected option string: %s"
+msgstr "unerwartete Option: %s"
+
+#: argparse.py:2517
+#, python-format
+msgid "%r is not callable"
+msgstr "%r ist nicht aufrufbar"
+
+#: argparse.py:2534
+#, python-format
+msgid "invalid %(type)s value: %(value)r"
+msgstr "ungültiger Wert für %(type)s: %(value)r"
+
+#: argparse.py:2545
+#, python-format
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr "ungültige Wahl: %(value)r (Auswahl aus %(choices)s)"
+
+#: argparse.py:2621
+#, python-format
+msgid "%(prog)s: error: %(message)s\n"
+msgstr "%(prog)s: Fehler: %(message)s\n"
