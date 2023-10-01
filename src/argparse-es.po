@@ -1,0 +1,184 @@
+# Spanish translations for argparse module.
+# Copyright (C) 2023 Félix Medrano
+# This file is distributed under the same license as the i18nparse package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: i18nparse\n"
+"Report-Msgid-Bugs-To: s-ball@laposte.net\n"
+"POT-Creation-Date: 2023-10-01 19:27+0200\n"
+"PO-Revision-Date: 2023-10-01 19:27+0200\n"
+"Last-Translator: Félix Medrano\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../cpython/Lib/argparse.py:299
+msgid "usage: "
+msgstr "uso: "
+
+#: ../../cpython/Lib/argparse.py:777
+#, python-format
+msgid "argument %(argument_name)s: %(message)s"
+msgstr "argumento %(argument_name)s: %(message)s"
+
+#: ../../cpython/Lib/argparse.py:883
+msgid ".__call__() not defined"
+msgstr ".__call__() no definido"
+
+#: ../../cpython/Lib/argparse.py:1214
+#, python-format
+msgid "conflicting subparser: %s"
+msgstr "subanalizador en conflicto: %s"
+
+#: ../../cpython/Lib/argparse.py:1218
+#, python-format
+msgid "conflicting subparser alias: %s"
+msgstr "alias de subanalizador en conflicto: %s"
+
+#: ../../cpython/Lib/argparse.py:1253
+#, python-format
+msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
+msgstr "analizador %(parser_name)r desconocido (opciones: %(choices)s)"
+
+#: ../../cpython/Lib/argparse.py:1313
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr "argumento \"-\" con modo %r"
+
+#: ../../cpython/Lib/argparse.py:1322
+#, python-format
+msgid "can't open '%(filename)s': %(error)s"
+msgstr "no se puede abrir '%(filename)s': %(error)s"
+
+#: ../../cpython/Lib/argparse.py:1533
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr "no se pueden unir las acciones - dos grupos se llaman %r"
+
+#: ../../cpython/Lib/argparse.py:1571
+msgid "'required' is an invalid argument for positionals"
+msgstr "'required' es un argumento inválido para posicionales"
+
+#: ../../cpython/Lib/argparse.py:1593
+#, python-format
+msgid ""
+"invalid option string %(option)r: must start with a character "
+"%(prefix_chars)r"
+msgstr ""
+"literal de opción inválido %(option)r: debe empezar con un carácter "
+"%(prefix_chars)r"
+
+#: ../../cpython/Lib/argparse.py:1611
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr "dest= es necesario en opciones como %r"
+
+#: ../../cpython/Lib/argparse.py:1628
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr "valor inválido para conflict_resolution: %r"
+
+#: ../../cpython/Lib/argparse.py:1646
+#, python-format
+msgid "conflicting option string: %s"
+msgid_plural "conflicting option strings: %s"
+msgstr[0] "literal de opción en conflicto: %s"
+msgstr[1] "literales de opción en conflicto: %s"
+
+#: ../../cpython/Lib/argparse.py:1720
+msgid "mutually exclusive arguments must be optional"
+msgstr "los argumentos mutuamente exclusivos deben ser opcionales"
+
+#: ../../cpython/Lib/argparse.py:1796
+msgid "positional arguments"
+msgstr "argumentos posicionales"
+
+#: ../../cpython/Lib/argparse.py:1797
+msgid "options"
+msgstr "opciones"
+
+#: ../../cpython/Lib/argparse.py:1812
+msgid "show this help message and exit"
+msgstr "muestra este mensaje de ayuda y termina"
+
+#: ../../cpython/Lib/argparse.py:1841
+msgid "cannot have multiple subparser arguments"
+msgstr "no puede haber múltiples argumentos de subanalizador"
+
+#: ../../cpython/Lib/argparse.py:1893 ../../cpython/Lib/argparse.py:2408
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr "argumentos no conocidos: %s"
+
+#: ../../cpython/Lib/argparse.py:1993
+#, python-format
+msgid "not allowed with argument %s"
+msgstr "no se permite con el argumento %s"
+
+#: ../../cpython/Lib/argparse.py:2043 ../../cpython/Lib/argparse.py:2057
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr "argumento explícito %r ignorado"
+
+#: ../../cpython/Lib/argparse.py:2164
+#, python-format
+msgid "the following arguments are required: %s"
+msgstr "los siguientes argumentos son necesarios: %s"
+
+#: ../../cpython/Lib/argparse.py:2179
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr "uno de los argumentos %s es necesario"
+
+#: ../../cpython/Lib/argparse.py:2223
+msgid "expected one argument"
+msgstr "se espera un argumento"
+
+#: ../../cpython/Lib/argparse.py:2224
+msgid "expected at most one argument"
+msgstr "se espera a lo sumo un argumento"
+
+#: ../../cpython/Lib/argparse.py:2225
+msgid "expected at least one argument"
+msgstr "se espera al menos un argumento"
+
+#: ../../cpython/Lib/argparse.py:2229
+#, python-format
+msgid "expected %s argument"
+msgid_plural "expected %s arguments"
+msgstr[0] "se espera el argumento %s"
+msgstr[1] "se esperan los argumentos %s"
+
+#: ../../cpython/Lib/argparse.py:2287
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "opción ambigua: %(option)s podría corresponder con %(matches)s"
+
+#: ../../cpython/Lib/argparse.py:2351
+#, python-format
+msgid "unexpected option string: %s"
+msgstr "literal de opción inesperado: %s"
+
+#: ../../cpython/Lib/argparse.py:2550
+#, python-format
+msgid "%r is not callable"
+msgstr "%r no es invocable"
+
+#: ../../cpython/Lib/argparse.py:2566
+#, python-format
+msgid "invalid %(type)s value: %(value)r"
+msgstr "valor %(type)s inválido: %(value)r"
+
+#: ../../cpython/Lib/argparse.py:2577
+#, python-format
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr "opción inválida: %(value)r (elegir entre %(choices)s)"
+
+#: ../../cpython/Lib/argparse.py:2655
+#, python-format
+msgid "%(prog)s: error: %(message)s\n"
+msgstr "%(prog)s: error: %(message)s\n"
