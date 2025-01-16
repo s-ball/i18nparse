@@ -1,5 +1,6 @@
 include README.md
 include LICEN[CS]E*
 include src/*.po
+include src/*.pot
 exclude .*
 exclude *~

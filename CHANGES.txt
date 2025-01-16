@@ -1,3 +1,10 @@
+Release 0.9.0: Upgrade for current CPython source
+Correctly translates the version action help message
+The pot file is correctly included in GitHub and source distro
+Fixes issues #8, #10, #11
+
+Release 0.8.0: Add German and Portuguese translations
+
 Release 0.7.1: Correctly handles the C locale.
 Fixes issue #3
 
