@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling", "hatch-gettext"]
+build-backend = "hatchling.build"
+
+[project]
+name = "i18nparse"
+dynamic = ["version"]
+description = "Provides translations for argparse module"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3"
+authors = [
+    { name = "s-ball", email = "s-ball@laposte.net" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: French",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Internationalization",
+]
+
+[project.urls]
+Changelog = "https://github.com/s-ball/i18nparse/blob/master/CHANGES.txt"
+Homepage = "https://github.com/s-ball/i18nparse"
+
+[tool.hatch.version]
+path = "i18nparse/version.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/i18nparse","/src","/CONTRIBUTING"
+]
+[tool.hatch.build.targets.wheel]
+artifacts = [
+    "*.mo"
+]
+
+[tool.hatch.build.targets.wheel.hooks.gettext]
+locale-directory = "i18nparse/locale"
+po-directory = "src"
+i18n-name = "argparse"
