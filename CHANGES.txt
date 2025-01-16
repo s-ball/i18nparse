@@ -1,7 +1,8 @@
 Release 0.9.0: Upgrade for current CPython source
 Correctly translates the version action help message
 The pot file is correctly included in GitHub and source distro
-Fixes issues #8, #10, #11
+Add Spanish and Slovenian translations.
+Fixes issues #4 to #8, #10, #11
 
 Release 0.8.0: Add German and Portuguese translations
 
