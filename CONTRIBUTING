@@ -10,7 +10,7 @@ git clone https://github.com/s-ball/i18nparse.git
 
 Improving existing translations:
 
-The po files are is the src directory, named as argparge_xx.po, where xx is a
+The po files are is the src directory, named as xx.po, where xx is a
 language code. They are text files, so you can easily edit them.
 
 
@@ -24,22 +24,11 @@ object of this text.
 
 Testing locally:
 
-The project comes with a setup.py file that can be used to build distributions,
- or directly install the project.
+The project uses hatch as its build system. You can simply build a new source
+distribution and the associated wheel with `hatch build` from a GitHub clone
+or a source distribution from PyPI.
 
-The recommended way is:
-- setup a virtual environment (python -m venv new_env)
-- use it (new_env\Scripts\activate on Windows, or new_env/bin/activate on
-Unix-likes)
-- install the wheel package (pip install wheel)
-- build a wheel in the dist directory (python setup bdist_wheel)
-- install the wheel (pip install dist\... on Windows or pip install dist/...)
-
-The good news is that in that case pip is able to remove the installation with
- pip uninstall i18nparse, if you want to make a small change
-
-You can then use the installation from that virtual environment.
-
+The recommended way is to do that in a virtual environment.
 
 Upload:
 
