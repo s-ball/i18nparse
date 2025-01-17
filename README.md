@@ -2,15 +2,18 @@
 Localization of the Python argparse module
 
 ## Current status
-Only the French language translation was initialy provided. Thanks to [anselmobd](https://github.com/anselmobd) and [blackstream-x](https://github.com/blackstream-x),
+Only the French language translation was initially provided. Thanks to [anselmobd](https://github.com/anselmobd) and [blackstream-x](https://github.com/blackstream-x),
 the project now contains Portuguese and German language translations.
 
 Translations for German, Spanish and Slovene are also provided.
 
-The binary wheel file contains litte endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
+The binary wheel file contains little endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
 
 **BEWARE**: The argparse module that `i18nparse` translates evolves. The current French translation is
 in par with recent Python version (after 2024) while other language may use older versions.
+
+The list of the translations and the date of their last update is available
+in the [TRANSLATIONS.md](https://github.com/s-ball/i18nparse/blob/master/TRANSLATIONS.md) file.
 
 ## Goals
 The argparse module makes it easy to write user-friendly command-line interfaces. Specifically, it automatically generates help and usage messages and issues errors when users give the program invalid arguments. Unfortunately, even if the module is able to use `gettext` type localization strings, none is provided by the standard library.
@@ -23,7 +26,7 @@ This module provides some translations (at least a French one) and will be simpl
 
 With pip: `pip install i18nparse`.
 
-### Developper installation
+### Developer installation
 
 If you want to contribute, you should get a copy of the full tree from [GitHub](https://github.com/s-ball/i18nparse):
 
