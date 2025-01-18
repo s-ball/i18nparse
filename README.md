@@ -9,11 +9,14 @@ Translations for German, Spanish and Slovene are also provided.
 
 The binary wheel file contains little endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
 
-**BEWARE**: The argparse module that `i18nparse` translates evolves. The current French translation is
-in par with recent Python version (after 2024) while other language may use older versions.
-
 The list of the translations and the date of their last update is available
 in the [TRANSLATIONS.md](https://github.com/s-ball/i18nparse/blob/master/TRANSLATIONS.md) file.
+
+*That last update is a hint for the Python versions where the `argparse.py` is acutely translated*. Some
+identifiers may be missing for older or more recent versions. Nevertheless, even
+if the translation is too old or too recent, the worst
+effect will be some texts still appearing in English
+language.
 
 ## Goals
 The argparse module makes it easy to write user-friendly command-line interfaces. Specifically, it automatically generates help and usage messages and issues errors when users give the program invalid arguments. Unfortunately, even if the module is able to use `gettext` type localization strings, none is provided by the standard library.
