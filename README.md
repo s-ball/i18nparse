@@ -21,7 +21,7 @@ language.
 ## Goals
 The argparse module makes it easy to write user-friendly command-line interfaces. Specifically, it automatically generates help and usage messages and issues errors when users give the program invalid arguments. Unfortunately, even if the module is able to use `gettext` type localization strings, none is provided by the standard library.
 
-This module provides some translations (at least a French one) and will be simply installable through `pip`
+This module provides some translations and is  simply installable through `pip`
 
 ## Installing
 
@@ -80,7 +80,7 @@ Assuming a `fr_FR` locale, this displays:
 ```
 usage : foo [-h]
 
-arguments optionnels:
+options:
   -h, --help  affiche ce message et termine le programme
 ```
 
