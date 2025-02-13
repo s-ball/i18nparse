@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling", "hatch-gettext"]
+requires = ["hatchling", "hatch-msgfmt-s-ball"]
 build-backend = "hatchling.build"
 
 [project]
@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Provides translations for argparse module"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3"
+requires-python = ">=3.11"
 authors = [
     { name = "s-ball", email = "s-ball@laposte.net" },
 ]
@@ -20,7 +20,7 @@ classifiers = [
     "Natural Language :: French",
     "Natural Language :: German",
     "Natural Language :: Spanish",
-    "Natural Language :: Brazilian Portuguese",
+    "Natural Language :: Portuguese (Brazilian)",
     "Natural Language :: Slovenian",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
@@ -41,12 +41,10 @@ path = "i18nparse/version.py"
 include = [
     "/i18nparse","/src","/CONTRIBUTING"
 ]
-[tool.hatch.build.targets.wheel]
-artifacts = [
-    "*.mo"
-]
 
-[tool.hatch.build.targets.wheel.hooks.gettext]
-locale-directory = "i18nparse/locale"
-po-directory = "src"
-i18n-name = "argparse"
+[tool.hatch.build.targets.wheel.hooks.msgfmt]
+domain = "argparse"
+messages = "src"
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.13", "3.12", "3.11"]
