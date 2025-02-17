@@ -8,22 +8,19 @@ dynamic = ["version"]
 description = "Provides translations for argparse module"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 authors = [
     { name = "s-ball", email = "s-ball@laposte.net" },
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Natural Language :: French",
-    "Natural Language :: German",
-    "Natural Language :: Spanish",
-    "Natural Language :: Portuguese (Brazilian)",
-    "Natural Language :: Slovenian",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -39,12 +36,12 @@ path = "i18nparse/version.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/i18nparse","/src","/CONTRIBUTING"
+    "/i18nparse","/po","/CONTRIBUTING"
 ]
 
 [tool.hatch.build.targets.wheel.hooks.msgfmt]
 domain = "argparse"
-messages = "src"
+messages = "po"
 
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.13", "3.12", "3.11"]

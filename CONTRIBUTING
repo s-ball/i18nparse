@@ -21,6 +21,9 @@ object template. There are plenty of tools allowing to produce and generate a
 new po file (GNU gettext, poedit, etc.) and their description is beyond the
 object of this text.
 
+Anyway, except for the French languages, all translation .po files are
+provided by the Translation Project (https://translationproject.org/). So any
+improvement should be directed there.
 
 Testing locally:
 
@@ -30,15 +33,23 @@ or a source distribution from PyPI.
 
 The recommended way is to do that in a virtual environment.
 
-Upload:
+Pot file generation:
 
-The expected way is to submit a pull request on GitHUB. If you are not
-comfortable with that, you can post an issue with the new po file as an
-attachment. As I maintain the project on my free time, I cannot guarantee
-to always be highly responsive. But as I am very interested in the project
-since I created it, be assured that I will do my best to incorporate
-additions and improvements.
+I normally build an initial pot file from the last published Python version
+available at https//python.org. Then I control manually whether string ids
+from older but still maintained versions have been dropped and I add them to
+the tail of the pot file to ensure compatibility. I only remove them when
+- either a Python version reaches its end of life
+- or I decide to drop support for that version
 
+In any case, support shall be consistent with the requires-python directive
+from pyproject.toml
+
+The command xgettext --no-location --sort-output --omit-header is great at
+generating po files that can easily be compared with each other. Of course
+the final pot file shall contain the full location information (relevant for
+the most recent Python release), a header, and the order of the messages is
+expected to be the order they have in the argparse.py file.
 
 Caveats:
 

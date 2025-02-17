@@ -1,17 +1,25 @@
 # Current translations
 
 
-| Language | Last author   | Date       |
-|----------|---------------|------------|
-| fr       | s-ball        | 2025-01-16 |
-| de       | blackstream-x | 2023-10-31 |
-| es       | robertxgray   | 2023-10-01 |
-| pt_BR    | anselmobd     | 2020-09-26 |
-| sl       | tomazfs       | 2023-08-03 |
+| Language | Minimal Python version | Maximal Python version                   |
+|----------|------------------------|------------------------------------------|
+| fr       | 3.9                    | 3.9.21, 3.10.16, 3.11.11, 3.12.9, 3.13.3 |
 
-The date of the translation (the `.po` file) is a hint for
-the Python versions the translation is in par with. Nevertheless, even
-if the translation is too old or too recent, the worst
-effect will be some texts still appearing in English
-language.
+But **beware**:
+When you pass the option `-h` to a program using `i18nparse` the text for
+the *version* option will appear in English for all Python releases before 3.11.9,
+3.12.3 or 3.13.0 . For example for a French locale you would get:
+
+```
+usage : ProgName [-h] [--version]
+
+options:
+-h, --help  affiche ce message et termine le programme
+--version   show program's version number and exit
+```
+
+The problem in not in `i18nparse`. The string
+`"show program's version number and exit"` is simply not marked for
+translation is the module `argparse.py` before those Python versions.
+
 

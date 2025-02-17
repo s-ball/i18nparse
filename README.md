@@ -1,27 +1,46 @@
 # i18nparse
 Localization of the Python argparse module
 
-## Current status
-Only the French language translation was initially provided. Thanks to [anselmobd](https://github.com/anselmobd) and [blackstream-x](https://github.com/blackstream-x),
-the project now contains Portuguese and German language translations.
+## Goals
+The argparse module makes it easy to write user-friendly command-line interfaces.
+Specifically, it automatically generates help and usage messages and issues errors
+when users give the program invalid arguments. Unfortunately, even if the module
+is able to use `gettext` type localization strings, none is provided by the standard library.
 
-Translations for German, Spanish and Slovene are also provided.
+This module provides some translations and is  simply installable through `pip`
+
+## Current status
+Starting with the 1.0.0 release this package is announced as Production grade.
+The translations are provided by the [Translation Project](https://translationproject.org/),
+except for the French one which is still provided by the developer.
 
 The binary wheel file contains little endian mo translation files. Users of big endian systems should use the source distribution to generate the mo files on their own system.
 
-The list of the translations and the date of their last update is available
+The list of the translations and the Python versions for which they are in sync is available
 in the [TRANSLATIONS.md](https://github.com/s-ball/i18nparse/blob/master/TRANSLATIONS.md) file.
 
-*That last update is a hint for the Python versions where the `argparse.py` is acutely translated*. Some
-identifiers may be missing for older or more recent versions. Nevertheless, even
+Nevertheless, even
 if the translation is too old or too recent, the worst
 effect will be some texts still appearing in English
 language.
 
-## Goals
-The argparse module makes it easy to write user-friendly command-line interfaces. Specifically, it automatically generates help and usage messages and issues errors when users give the program invalid arguments. Unfortunately, even if the module is able to use `gettext` type localization strings, none is provided by the standard library.
+### Known bugs and limitations
 
-This module provides some translations and is  simply installable through `pip`
+When you pass the option `-h` to a program using `i18nparse` the text for
+the *version* option will appear in English for all Python releases before 3.11.9,
+3.12.3 or 3.13.0 . For example for a French locale you would get:
+
+```
+usage : ProgName [-h] [--version]
+
+options:
+-h, --help  affiche ce message et termine le programme
+--version   show program's version number and exit
+```
+
+The problem in not in `i18nparse`. The string
+`"show program's version number and exit"` is simply not marked for
+translation is the module `argparse.py` before those Python versions.
 
 ## Installing
 
@@ -86,11 +105,16 @@ options:
 
 ## Contributing
 
-Contribution for new language translations or improvement of existing ones are welcome. See [CONTRIBUTING](https://raw.githubusercontent.com/s-ball/i18nparse/master/CONTRIBUTING) for details
+Contribution for new language translations or improvement of existing ones should
+be addressed to the [Translation Project](https://translationproject.org/).
+Only remarks on the project itself should lead to issues on GitHub. See [CONTRIBUTING](https://raw.githubusercontent.com/s-ball/i18nparse/master/CONTRIBUTING) for details
 
 ## Versioning
 
-This project uses a standard Major.Minor.Patch versioning pattern. Inside a major version, public API stability is expected (at least after 1.0.0 version will be published).
+This project uses a standard Major.Minor.Patch versioning pattern.
+Inside a major version, public API stability is expected. Inside
+a minor version, the matrix of compatibility with Python versions 
+should remain unchanged.
 
 ## License
 
