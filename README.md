@@ -24,6 +24,13 @@ if the translation is too old or too recent, the worst
 effect will be some texts still appearing in English
 language.
 
+### Direct links to the `argparse.py` source file
+
+For the version 1.0.0, the reference version for the `argparse.py` file is the
+one from the 3.13.2 Python release ([raw content](https://raw.githubusercontent.com/python/cpython/refs/tags/v3.13.2/Lib/argparse.py)).
+As of February 2025, it is the one for the
+3.13 branch available [here](https://github.com/python/cpython/blob/3.13/Lib/argparse.py)
+
 ### Known bugs and limitations
 
 When you pass the option `-h` to a program using `i18nparse` the text for

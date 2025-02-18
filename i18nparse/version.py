@@ -1,4 +1,4 @@
-__version__ = "1.0.0a0"
+__version__ = "1.0.0a1"
 # this file must contain __version__ = version_string as its first line
 
 # MIT License
