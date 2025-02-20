@@ -3,7 +3,7 @@
 
 | Language | Minimal Python version | Maximal Python version                   |
 |----------|------------------------|------------------------------------------|
-| fr       | 3.9                    | 3.9.21, 3.10.16, 3.11.11, 3.12.9, 3.13.3 |
+| fr       | 3.10                   | 3.10.16, 3.11.11, 3.12.9, 3.13.3 |
 
 But **beware**:
 When you pass the option `-h` to a program using `i18nparse` the text for
