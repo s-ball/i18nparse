@@ -17,7 +17,7 @@ If the translation file does not exist, the original messages will be used.
     if lang is None:
         lang = locale.getlocale()[0]
     if lang is not None:
-        tr = gettext.translation("argparse", os.path.join(locpath, "locale"),
+        tr = gettext.translation("i18nparse", os.path.join(locpath, "locale"),
                                  [lang], fallback=True)
         argparse._ = tr.gettext
         argparse.ngettext = tr.ngettext

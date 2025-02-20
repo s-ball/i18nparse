@@ -40,8 +40,9 @@ include = [
 ]
 
 [tool.hatch.build.targets.wheel.hooks.msgfmt]
-domain = "argparse"
+domain = "i18nparse"
 messages = "po"
+locale = "i18nparse/locale"
 
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.13", "3.12", "3.11"]
