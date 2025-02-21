@@ -6,7 +6,7 @@ Release 1.0.0: First Production grade version
         3.12 up to 3.12.6, 3.13 up to 3.13.2
     The locale folder goes under the main i18nparse directory
     The used gettext domain is i18nparse and no longer argparse
-    The POT file is named i18nparse.pot
+    The POT file is named "i18nparse.pot"
 
 Release 0.10.0: Change build system to hatch
 po files are renamed to lang.po (e.g. fr.po) to allow usage of hatch-gettext plugin

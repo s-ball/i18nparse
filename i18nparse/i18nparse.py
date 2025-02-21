@@ -5,6 +5,7 @@ import argparse
 import locale
 import os.path
 
+# noinspection PyUnresolvedReferences,PyProtectedMember
 _orig = { "_": argparse._, "ngettext": argparse.ngettext }
 
 locpath = os.path.dirname(__file__)

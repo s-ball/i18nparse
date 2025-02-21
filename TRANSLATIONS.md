@@ -1,8 +1,8 @@
 # Current translations
 
 
-| Language | Minimal Python version | Maximal Python version                   |
-|----------|------------------------|------------------------------------------|
+| Language | Minimal Python version | Maximal Python version           |
+|----------|------------------------|----------------------------------|
 | fr       | 3.10                   | 3.10.16, 3.11.11, 3.12.9, 3.13.3 |
 
 But **beware**:
