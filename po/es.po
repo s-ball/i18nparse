@@ -1,4 +1,4 @@
-# Spanish translations for argparse module.
+# Spanish translations for the Python 'argparse' module.
 # Copyright (C) 2023 Félix Medrano
 # This file is distributed under the same license as the i18nparse package.
 #
@@ -12,7 +12,7 @@ msgstr ""
 "Language-Team: Spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 

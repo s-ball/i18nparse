@@ -1,23 +1,21 @@
-# Brazilian translations for the Python 'argparse' module.
+# Dutch translations for Python's `argparse` module.
 # This file is published under the MIT License.
-# Anselmo Blanco Dominguez, 2020.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2025.
 #
+# Benno Schulenberg <vertaling@coevern.nl>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: i18nparse 1.0.0-pre4\n"
 "Report-Msgid-Bugs-To: s-ball@laposte.net\n"
 "POT-Creation-Date: 2025-02-17 14:45+0100\n"
-"PO-Revision-Date: 2025-02-21 14:22-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge.net>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2025-02-21 17:05+0100\n"
+"Last-Translator: Benno Schulenberg <vertaling@coevern.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: argparse.py:226
 #, python-format
@@ -26,196 +24,196 @@ msgstr "%(heading)s:"
 
 #: argparse.py:297
 msgid "usage: "
-msgstr "uso: "
+msgstr "Gebruik:  "
 
 #: argparse.py:673
 #, python-format
 msgid " (default: %(default)s)"
-msgstr " (padrão: %(default)s)"
+msgstr " (standaard: %(default)s)"
 
 #: argparse.py:735
 #, python-format
 msgid "argument %(argument_name)s: %(message)s"
-msgstr "argumento %(argument_name)s: %(message)s"
+msgstr "argument %(argument_name)s: %(message)s"
 
 #: argparse.py:844
 msgid ".__call__() not defined"
-msgstr ".__call__() não definida"
+msgstr ".__call__() is niet gedefinieerd"
 
 #: argparse.py:1135
 msgid "show program's version number and exit"
-msgstr "mostra o número da versão do programa e sai"
+msgstr "programmaversie tonen en stoppen"
 
 #: argparse.py:1198
 #, python-format
 msgid "conflicting subparser: %s"
-msgstr "sub-analisador sintático conflitante: %s"
+msgstr "conflicterende sub-ontleder: %s"
 
 #: argparse.py:1202
 #, python-format
 msgid "conflicting subparser alias: %s"
-msgstr "apelido de sub-analisador sintático conflitante: %s"
+msgstr "conflicterende sub-ontleder-alias: %s"
 
 #: argparse.py:1241
 #, python-format
 msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
-msgstr "analisador sintático %(parser_name)r desconhecido (escolhas: %(choices)s)"
+msgstr "onbekende ontleder %(parser_name)r (keuzes: %(choices)s)"
 
 #: argparse.py:1245
 #, python-format
 msgid "command '%(parser_name)s' is deprecated"
-msgstr "o comando '%(parser_name)s' foi descontinuado"
+msgstr "opdracht '%(parser_name)s' is verouderd"
 
 #: argparse.py:1306
 #, python-format
 msgid "argument \"-\" with mode %r"
-msgstr "argumento \"-\" com modo %r"
+msgstr "argument \"-\" bij modus %r"
 
 #: argparse.py:1315
 #, python-format
 msgid "can't open '%(filename)s': %(error)s"
-msgstr "não é possível abrir '%(filename)s': %(error)s"
+msgstr "kan '%(filename)s' niet openen: %(error)s"
 
 #: argparse.py:1526
 #, python-format
 msgid "cannot merge actions - two groups are named %r"
-msgstr "não é possível unir ações - dois grupos com o nome %r"
+msgstr "kan acties niet samenvoegen – twee groepen genaamd %r"
 
 #: argparse.py:1568
 msgid "'required' is an invalid argument for positionals"
-msgstr "'required' é um argumento inválido para posicionais"
+msgstr "'required' is een ongeldig argument voor positionelen"
 
 #: argparse.py:1589
 #, python-format
 msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
-msgstr "opção inválida %(option)r: deve começar com um caractere %(prefix_chars)r"
+msgstr "ongeldige optietekenreeks %(option)r: moet beginnen met een teken uit %(prefix_chars)r"
 
 #: argparse.py:1607
 #, python-format
 msgid "dest= is required for options like %r"
-msgstr "dest= é obrigatório para opções como %r"
+msgstr "'dest=' is vereist voor opties zoals %r"
 
 #: argparse.py:1624
 #, python-format
 msgid "invalid conflict_resolution value: %r"
-msgstr "valor de conflict_resolution inválido: %r"
+msgstr "ongeldige waarde voor conflictoplossing: %r"
 
 #: argparse.py:1642
 #, python-format
 msgid "conflicting option string: %s"
 msgid_plural "conflicting option strings: %s"
-msgstr[0] "opção conflitante: %s"
-msgstr[1] "opções conflitantes: %s"
+msgstr[0] "conflicterende optietekenreeks: %s"
+msgstr[1] "conflicterende optietekenreeksen: %s"
 
 #: argparse.py:1717
 msgid "mutually exclusive arguments must be optional"
-msgstr "argumentos mutuamente exclusivos devem ser opcionais"
+msgstr "opties die niet samengaan moeten optioneel zijn"
 
 #: argparse.py:1794
 msgid "positional arguments"
-msgstr "argumentos posicionais"
+msgstr "positionele argumenten"
 
 #: argparse.py:1795
 msgid "options"
-msgstr "opções"
+msgstr "opties"
 
 #: argparse.py:1810
 msgid "show this help message and exit"
-msgstr "mostra esta mensagem de ajuda e sai"
+msgstr "deze hulptekst tonen en stoppen"
 
 #: argparse.py:1839
 msgid "cannot have multiple subparser arguments"
-msgstr "não é possível ter vários argumentos de sub-analisador sintático"
+msgstr "meerdere sub-ontleder-argumenten zijn niet mogelijk"
 
 #: argparse.py:1845
 msgid "subcommands"
-msgstr "subcomandos"
+msgstr "sub-opdrachten"
 
 #: argparse.py:1891 argparse.py:2454
 #, python-format
 msgid "unrecognized arguments: %s"
-msgstr "argumentos não reconhecidos: %s"
+msgstr "niet-herkende argumenten: %s"
 
 #: argparse.py:1997
 #, python-format
 msgid "not allowed with argument %s"
-msgstr "não permitido com o argumento %s"
+msgstr "niet toegestaan met argument %s"
 
 #: argparse.py:2016
 #, python-format
 msgid "ambiguous option: %(option)s could match %(matches)s"
-msgstr "opção ambígua: %(option)s pode ser %(matches)s"
+msgstr "niet-eenduidige optie: %(option)s kan overeenkomen met %(matches)s"
 
 #: argparse.py:2048 argparse.py:2080
 #, python-format
 msgid "ignored explicit argument %r"
-msgstr "argumento explícito %r ignorado"
+msgstr "genegeerd expliciet argument %r"
 
 #: argparse.py:2100
 #, python-format
 msgid "option '%(option)s' is deprecated"
-msgstr "opção '%(option)s' está descontinuada"
+msgstr "optie '%(option)s' is verouderd"
 
 #: argparse.py:2132
 #, python-format
 msgid "argument '%(argument_name)s' is deprecated"
-msgstr "argumento '%(argument_name)s' está descontinuado"
+msgstr "argument '%(argument_name)s' is verouderd"
 
 #: argparse.py:2225
 #, python-format
 msgid "the following arguments are required: %s"
-msgstr "os seguintes argumentos são obrigatórios: %s"
+msgstr "de volgende argumenten zijn vereist: %s"
 
 #: argparse.py:2240
 #, python-format
 msgid "one of the arguments %s is required"
-msgstr "um dos argumentos %s é obrigatório"
+msgstr "één van de argumenten %s is vereist"
 
 #: argparse.py:2284
 msgid "expected one argument"
-msgstr "esperava um argumento"
+msgstr "één argument werd verwacht"
 
 #: argparse.py:2285
 msgid "expected at most one argument"
-msgstr "esperado no máximo um argumento"
+msgstr "hooguit één argument werd verwacht"
 
 #: argparse.py:2286
 msgid "expected at least one argument"
-msgstr "esperado ao menos um argumento"
+msgstr "minstens één argument werd verwacht"
 
 #: argparse.py:2290
 #, python-format
 msgid "expected %s argument"
 msgid_plural "expected %s arguments"
-msgstr[0] "esperado %s argumento"
-msgstr[1] "esperados %s argumentos"
+msgstr[0] "verwachtte %s argument"
+msgstr[1] "verwachtte %s argumenten"
 
 #: argparse.py:2400
 #, python-format
 msgid "unexpected option string: %s"
-msgstr "string de opção inesperada: %s"
+msgstr "onverwachte optietekenreeks: %s"
 
 #: argparse.py:2536
 #, python-format
 msgid "%r is not callable"
-msgstr "%r não é um chamável"
+msgstr "%r is niet aanroepbaar"
 
 #: argparse.py:2552
 #, python-format
 msgid "invalid %(type)s value: %(value)r"
-msgstr "valor %(type)s inválido: %(value)r"
+msgstr "ongeldige waarde voor %(type)s: %(value)r"
 
 #: argparse.py:2567
 #, python-format
 msgid "invalid choice: %(value)r (choose from %(choices)s)"
-msgstr "opção inválida: %(value)r (escolha entre %(choices)s)"
+msgstr "ongeldige keuze: %(value)r (kies uit %(choices)s)"
 
 #: argparse.py:2645
 #, python-format
 msgid "%(prog)s: error: %(message)s\n"
-msgstr "%(prog)s: erro: %(message)s\n"
+msgstr "%(prog)s: fout: %(message)s\n"
 
 #: argparse.py:2649
 #, python-format
 msgid "%(prog)s: warning: %(message)s\n"
-msgstr "%(prog)s: aviso: %(message)s\n"
+msgstr "%(prog)s: waarschuwing: %(message)s\n"

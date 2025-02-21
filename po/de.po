@@ -1,7 +1,5 @@
-# German translations for argparse module (Python releases 3.8 - 3.13 as of 2023-10-31).
-# Copyright (C) 2018 s-ball
+# German translations for the Python 'argparse' module.
 # This file is distributed under the same license as the i18nparse package.
-# s-ball <s-ball@laposte.net>, 2018.
 #
 msgid ""
 msgstr ""
@@ -17,13 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: v3.8.18\n"
-"X-Poedit-SearchPath-1: v3.9.18\n"
-"X-Poedit-SearchPath-2: v3.10.13\n"
-"X-Poedit-SearchPath-3: v3.11.6\n"
-"X-Poedit-SearchPath-4: v3.12.0\n"
-"X-Poedit-SearchPath-5: v3.13.0a1\n"
 
 #: v3.10.13/argparse.py:296 v3.11.6/argparse.py:299 v3.12.0/argparse.py:299
 #: v3.13.0a1/argparse.py:297 v3.8.18/argparse.py:295 v3.9.18/argparse.py:296
