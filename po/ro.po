@@ -1,22 +1,29 @@
-# German translations for the Python 'argparse' module.
+# Romanian translation for Python's `argparse` module.
+# Mesajele în limba română pentru modulul Python „argparse” (i18nparse).
 # This file is published under the MIT License.
-# blackstream-x <rz498sc@gmx.net>, 2023.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2025.
+# Translations meant for Python's `argparse` module.
+#
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2025.
+#
+# Cronologia traducerii fișierului „i18nparse”:
+# Traducerea inițială, făcută de R-GC, pentru versiunea i18nparse 1.0.0-pre4, feb-2025.
+# Actualizare a traducerii pentru versiunea Y, făcută de X, Z(luna-anul).
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: i18nparse 1.0.0-pre4\n"
 "Report-Msgid-Bugs-To: s-ball@laposte.net\n"
 "POT-Creation-Date: 2025-02-17 14:45+0100\n"
-"PO-Revision-Date: 2025-02-23 15:49+0100\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
-"Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
-"Language: de\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
+"PO-Revision-Date: 2025-02-21 19:32+0100\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.5\n"
 
 #: argparse.py:226
 #, python-format
@@ -25,196 +32,198 @@ msgstr "%(heading)s:"
 
 #: argparse.py:297
 msgid "usage: "
-msgstr "Aufruf: "
+msgstr "utilizare: "
 
 #: argparse.py:673
 #, python-format
 msgid " (default: %(default)s)"
-msgstr " (Vorgabe: %(default)s)"
+msgstr " (implicit: %(default)s)"
 
 #: argparse.py:735
 #, python-format
 msgid "argument %(argument_name)s: %(message)s"
-msgstr "Argument %(argument_name)s: %(message)s"
+msgstr "argument %(argument_name)s: %(message)s"
 
 #: argparse.py:844
 msgid ".__call__() not defined"
-msgstr ".__call__() ist undefiniert"
+msgstr "__call__() nu este definită"
 
 #: argparse.py:1135
 msgid "show program's version number and exit"
-msgstr "Versionsnummer des Programms anzeigen und beenden"
+msgstr "afișează numărul versiunii programului și iese"
 
 #: argparse.py:1198
 #, python-format
 msgid "conflicting subparser: %s"
-msgstr "Subparser im Konflikt: %s"
+msgstr "subanalizator conflictual: %s"
 
 #: argparse.py:1202
 #, python-format
 msgid "conflicting subparser alias: %s"
-msgstr "Subparser-Alias im Konflikt: %s"
+msgstr "alias de subanalizator conflictual: %s"
 
 #: argparse.py:1241
 #, python-format
 msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
-msgstr "unbekannter Parser %(parser_name)r (Auswahl aus %(choices)s)"
+msgstr "analizator necunoscut %(parser_name)r (alegeri: %(choices)s)"
 
 #: argparse.py:1245
 #, python-format
 msgid "command '%(parser_name)s' is deprecated"
-msgstr "Befehl »%(parser_name)s« ist veraltet"
+msgstr "comanda „%(parser_name)s” este depreciată"
 
 #: argparse.py:1306
 #, python-format
 msgid "argument \"-\" with mode %r"
-msgstr "Argument »-« mit Zugriffsart %r"
+msgstr "argumentul „-” cu modul %r"
 
 #: argparse.py:1315
 #, python-format
 msgid "can't open '%(filename)s': %(error)s"
-msgstr "»%(filename)s« kann nicht geöffnet werden: %(error)s"
+msgstr "nu se poate deschide „%(filename)s”: %(error)s"
 
 #: argparse.py:1526
 #, python-format
 msgid "cannot merge actions - two groups are named %r"
-msgstr "Aktionen können nicht zusammengeführt werden - zwei Gruppen haben den gleichen Namen %r"
+msgstr "nu se pot combina acțiunile - două grupuri sunt numite %r"
 
 #: argparse.py:1568
 msgid "'required' is an invalid argument for positionals"
-msgstr "»required« darf nicht mit Positionsargumenten verwendet werden"
+msgstr "„required” este un argument nevalid pentru poziționale"
 
 #: argparse.py:1589
 #, python-format
 msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
-msgstr "Option %(option)r ungültig: muss mit einem Zeichen %(prefix_chars)r beginnen"
+msgstr "șir de opțiuni nevalid %(option)r: trebuie să înceapă cu un caracter %(prefix_chars)r"
 
 #: argparse.py:1607
 #, python-format
 msgid "dest= is required for options like %r"
-msgstr "dest= wird bei Optionen wie %r benötigt"
+msgstr "dest= este necesar pentru opțiuni precum %r"
 
 #: argparse.py:1624
 #, python-format
 msgid "invalid conflict_resolution value: %r"
-msgstr "ungültiger Wert für conflict_resolution: %r"
+msgstr "valoare a conflict_resolution nevalidă: %r"
 
 #: argparse.py:1642
 #, python-format
 msgid "conflicting option string: %s"
 msgid_plural "conflicting option strings: %s"
-msgstr[0] "Optionszeichenkette steht im Konflikt: %s"
-msgstr[1] "Optionszeichenketten stehen im Konflikt: %s"
+msgstr[0] "șir de opțiune conflictual: %s"
+msgstr[1] "șiruri de opțiuni conflictuale: %s"
+msgstr[2] "șiruri de opțiuni conflictuale: %s"
 
 #: argparse.py:1717
 msgid "mutually exclusive arguments must be optional"
-msgstr "sich gegenseitig ausschließende Argumente müssen optional sein"
+msgstr "argumentele care se exclud reciproc trebuie să fie opționale"
 
 #: argparse.py:1794
 msgid "positional arguments"
-msgstr "Positionsargumente"
+msgstr "argumente poziționale"
 
 #: argparse.py:1795
 msgid "options"
-msgstr "Optionen"
+msgstr "opțiuni"
 
 #: argparse.py:1810
 msgid "show this help message and exit"
-msgstr "diese Hilfemeldung anzeigen und beenden"
+msgstr "afișează acest mesaj de ajutor și iese"
 
 #: argparse.py:1839
 msgid "cannot have multiple subparser arguments"
-msgstr "mehrfache Subparser werden nicht unterstützt"
+msgstr "nu se pot avea mai multe argumente pentru subanalizator"
 
 #: argparse.py:1845
 msgid "subcommands"
-msgstr "Unterbefehle"
+msgstr "subcomenzi"
 
 #: argparse.py:1891 argparse.py:2454
 #, python-format
 msgid "unrecognized arguments: %s"
-msgstr "Argumente nicht erkannt: %s"
+msgstr "argumente nerecunoscute: %s"
 
 #: argparse.py:1997
 #, python-format
 msgid "not allowed with argument %s"
-msgstr "in Verbindung mit Argument %s nicht erlaubt"
+msgstr "nu este permis cu argumentul %s"
 
 #: argparse.py:2016
 #, python-format
 msgid "ambiguous option: %(option)s could match %(matches)s"
-msgstr "Option nicht eindeutig: %(option)s passt auf %(matches)s"
+msgstr "opțiune ambiguă: %(option)s ar putea corespunde %(matches)s"
 
 #: argparse.py:2048 argparse.py:2080
 #, python-format
 msgid "ignored explicit argument %r"
-msgstr "explizites Argument %r wird ignoriert"
+msgstr "argument explicit ignorat %r"
 
 #: argparse.py:2100
 #, python-format
 msgid "option '%(option)s' is deprecated"
-msgstr "Option »%(option)s« ist veraltet"
+msgstr "opțiunea „%(option)s” este depreciată"
 
 #: argparse.py:2132
 #, python-format
 msgid "argument '%(argument_name)s' is deprecated"
-msgstr "Argument »%(argument_name)s« ist veraltet"
+msgstr "argumentul „%(argument_name)s” este depreciat"
 
 #: argparse.py:2225
 #, python-format
 msgid "the following arguments are required: %s"
-msgstr "die folgenden Argumente werden benötigt: %s"
+msgstr "sunt necesare următoarele argumente: %s"
 
 #: argparse.py:2240
 #, python-format
 msgid "one of the arguments %s is required"
-msgstr "eines der Argumente %s wird benötigt"
+msgstr "unul dintre argumentele %s este necesar"
 
 #: argparse.py:2284
 msgid "expected one argument"
-msgstr "genau ein Argument wird erwartet"
+msgstr "se aștepta un argument"
 
 #: argparse.py:2285
 msgid "expected at most one argument"
-msgstr "höchstens ein Argument wird erwartet"
+msgstr "se aștepta cel mult un argument"
 
 #: argparse.py:2286
 msgid "expected at least one argument"
-msgstr "mindestens ein Argument wird erwartet"
+msgstr "se aștepta cel puțin un argument"
 
 #: argparse.py:2290
 #, python-format
 msgid "expected %s argument"
 msgid_plural "expected %s arguments"
-msgstr[0] "%s Argument wird erwartet"
-msgstr[1] "%s Argumente werden erwartet"
+msgstr[0] "se aștepta %s argument"
+msgstr[1] "se așteptau %s argumente"
+msgstr[2] "se așteptau %s de argumente"
 
 #: argparse.py:2400
 #, python-format
 msgid "unexpected option string: %s"
-msgstr "unerwartete Optionszeichenkette: %s"
+msgstr "șir de opțiune neașteptat: %s"
 
 #: argparse.py:2536
 #, python-format
 msgid "%r is not callable"
-msgstr "%r ist nicht aufrufbar"
+msgstr "%r nu este apelabil"
 
 #: argparse.py:2552
 #, python-format
 msgid "invalid %(type)s value: %(value)r"
-msgstr "ungültiger Wert für %(type)s: %(value)r"
+msgstr "valoare %(type)s nevalidă: %(value)r"
 
 #: argparse.py:2567
 #, python-format
 msgid "invalid choice: %(value)r (choose from %(choices)s)"
-msgstr "ungültige Auswahl: %(value)r (Auswahl aus %(choices)s)"
+msgstr "alegere nevalidă: %(value)r (alegeți din %(choices)s)"
 
 #: argparse.py:2645
 #, python-format
 msgid "%(prog)s: error: %(message)s\n"
-msgstr "%(prog)s: Fehler: %(message)s\n"
+msgstr "%(prog)s: eroare: %(message)s\n"
 
 #: argparse.py:2649
 #, python-format
 msgid "%(prog)s: warning: %(message)s\n"
-msgstr "%(prog)s: Warnung: %(message)s\n"
+msgstr "%(prog)s: avertisment: %(message)s\n"

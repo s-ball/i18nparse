@@ -1,184 +1,220 @@
 # Spanish translations for the Python 'argparse' module.
-# Copyright (C) 2023 Félix Medrano
-# This file is distributed under the same license as the i18nparse package.
+# This file is published under the MIT License.
 #
+# Félix Medrano, 2023.
+# Benno Schulenberg <vertaling@coevern.nl>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: i18nparse\n"
+"Project-Id-Version: i18nparse 1.0.0-pre4\n"
 "Report-Msgid-Bugs-To: s-ball@laposte.net\n"
-"POT-Creation-Date: 2023-10-01 19:27+0200\n"
-"PO-Revision-Date: 2023-10-01 19:27+0200\n"
-"Last-Translator: Félix Medrano\n"
-"Language-Team: Spanish\n"
+"POT-Creation-Date: 2025-02-17 14:45+0100\n"
+"PO-Revision-Date: 2025-02-24 12:17+0100\n"
+"Last-Translator: Benno Schulenberg <vertaling@coevern.nl>\n"
+"Language-Team: Spanish <es@tp.org.es>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../../cpython/Lib/argparse.py:299
+#: argparse.py:226
+#, python-format
+msgid "%(heading)s:"
+msgstr "%(heading)s:"
+
+#: argparse.py:297
 msgid "usage: "
 msgstr "uso: "
 
-#: ../../cpython/Lib/argparse.py:777
+#: argparse.py:673
+#, python-format
+msgid " (default: %(default)s)"
+msgstr " (predeterminado: %(default)s)"
+
+#: argparse.py:735
 #, python-format
 msgid "argument %(argument_name)s: %(message)s"
 msgstr "argumento %(argument_name)s: %(message)s"
 
-#: ../../cpython/Lib/argparse.py:883
+#: argparse.py:844
 msgid ".__call__() not defined"
 msgstr ".__call__() no definido"
 
-#: ../../cpython/Lib/argparse.py:1214
+#: argparse.py:1135
+msgid "show program's version number and exit"
+msgstr "muestra la versión y termina"
+
+#: argparse.py:1198
 #, python-format
 msgid "conflicting subparser: %s"
 msgstr "subanalizador en conflicto: %s"
 
-#: ../../cpython/Lib/argparse.py:1218
+#: argparse.py:1202
 #, python-format
 msgid "conflicting subparser alias: %s"
 msgstr "alias de subanalizador en conflicto: %s"
 
-#: ../../cpython/Lib/argparse.py:1253
+#: argparse.py:1241
 #, python-format
 msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
 msgstr "analizador %(parser_name)r desconocido (opciones: %(choices)s)"
 
-#: ../../cpython/Lib/argparse.py:1313
+#: argparse.py:1245
+#, python-format
+msgid "command '%(parser_name)s' is deprecated"
+msgstr "orden '%(parser_name)s' es obsoleta"
+
+#: argparse.py:1306
 #, python-format
 msgid "argument \"-\" with mode %r"
 msgstr "argumento \"-\" con modo %r"
 
-#: ../../cpython/Lib/argparse.py:1322
+#: argparse.py:1315
 #, python-format
 msgid "can't open '%(filename)s': %(error)s"
 msgstr "no se puede abrir '%(filename)s': %(error)s"
 
-#: ../../cpython/Lib/argparse.py:1533
+#: argparse.py:1526
 #, python-format
 msgid "cannot merge actions - two groups are named %r"
 msgstr "no se pueden unir las acciones - dos grupos se llaman %r"
 
-#: ../../cpython/Lib/argparse.py:1571
+#: argparse.py:1568
 msgid "'required' is an invalid argument for positionals"
 msgstr "'required' es un argumento inválido para posicionales"
 
-#: ../../cpython/Lib/argparse.py:1593
+#: argparse.py:1589
 #, python-format
-msgid ""
-"invalid option string %(option)r: must start with a character "
-"%(prefix_chars)r"
-msgstr ""
-"literal de opción inválido %(option)r: debe empezar con un carácter "
-"%(prefix_chars)r"
+msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
+msgstr "literal de opción inválido %(option)r: debe empezar con un carácter %(prefix_chars)r"
 
-#: ../../cpython/Lib/argparse.py:1611
+#: argparse.py:1607
 #, python-format
 msgid "dest= is required for options like %r"
 msgstr "dest= es necesario en opciones como %r"
 
-#: ../../cpython/Lib/argparse.py:1628
+#: argparse.py:1624
 #, python-format
 msgid "invalid conflict_resolution value: %r"
 msgstr "valor inválido para conflict_resolution: %r"
 
-#: ../../cpython/Lib/argparse.py:1646
+#: argparse.py:1642
 #, python-format
 msgid "conflicting option string: %s"
 msgid_plural "conflicting option strings: %s"
 msgstr[0] "literal de opción en conflicto: %s"
 msgstr[1] "literales de opción en conflicto: %s"
 
-#: ../../cpython/Lib/argparse.py:1720
+#: argparse.py:1717
 msgid "mutually exclusive arguments must be optional"
 msgstr "los argumentos mutuamente exclusivos deben ser opcionales"
 
-#: ../../cpython/Lib/argparse.py:1796
+#: argparse.py:1794
 msgid "positional arguments"
 msgstr "argumentos posicionales"
 
-#: ../../cpython/Lib/argparse.py:1797
+#: argparse.py:1795
 msgid "options"
 msgstr "opciones"
 
-#: ../../cpython/Lib/argparse.py:1812
+#: argparse.py:1810
 msgid "show this help message and exit"
 msgstr "muestra este mensaje de ayuda y termina"
 
-#: ../../cpython/Lib/argparse.py:1841
+#: argparse.py:1839
 msgid "cannot have multiple subparser arguments"
 msgstr "no puede haber múltiples argumentos de subanalizador"
 
-#: ../../cpython/Lib/argparse.py:1893 ../../cpython/Lib/argparse.py:2408
+#: argparse.py:1845
+msgid "subcommands"
+msgstr "subórdenes"
+
+#: argparse.py:1891 argparse.py:2454
 #, python-format
 msgid "unrecognized arguments: %s"
 msgstr "argumentos no conocidos: %s"
 
-#: ../../cpython/Lib/argparse.py:1993
+#: argparse.py:1997
 #, python-format
 msgid "not allowed with argument %s"
 msgstr "no se permite con el argumento %s"
 
-#: ../../cpython/Lib/argparse.py:2043 ../../cpython/Lib/argparse.py:2057
+#: argparse.py:2016
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "opción ambigua: %(option)s podría corresponder con %(matches)s"
+
+#: argparse.py:2048 argparse.py:2080
 #, python-format
 msgid "ignored explicit argument %r"
 msgstr "argumento explícito %r ignorado"
 
-#: ../../cpython/Lib/argparse.py:2164
+#: argparse.py:2100
+#, python-format
+msgid "option '%(option)s' is deprecated"
+msgstr "opción '%(option)s' es obsoleta"
+
+#: argparse.py:2132
+#, python-format
+msgid "argument '%(argument_name)s' is deprecated"
+msgstr "argumento' %(argument_name)s' es obsoleto"
+
+#: argparse.py:2225
 #, python-format
 msgid "the following arguments are required: %s"
 msgstr "los siguientes argumentos son necesarios: %s"
 
-#: ../../cpython/Lib/argparse.py:2179
+#: argparse.py:2240
 #, python-format
 msgid "one of the arguments %s is required"
 msgstr "uno de los argumentos %s es necesario"
 
-#: ../../cpython/Lib/argparse.py:2223
+#: argparse.py:2284
 msgid "expected one argument"
 msgstr "se espera un argumento"
 
-#: ../../cpython/Lib/argparse.py:2224
+#: argparse.py:2285
 msgid "expected at most one argument"
 msgstr "se espera a lo sumo un argumento"
 
-#: ../../cpython/Lib/argparse.py:2225
+#: argparse.py:2286
 msgid "expected at least one argument"
 msgstr "se espera al menos un argumento"
 
-#: ../../cpython/Lib/argparse.py:2229
+#: argparse.py:2290
 #, python-format
 msgid "expected %s argument"
 msgid_plural "expected %s arguments"
 msgstr[0] "se espera el argumento %s"
 msgstr[1] "se esperan los argumentos %s"
 
-#: ../../cpython/Lib/argparse.py:2287
-#, python-format
-msgid "ambiguous option: %(option)s could match %(matches)s"
-msgstr "opción ambigua: %(option)s podría corresponder con %(matches)s"
-
-#: ../../cpython/Lib/argparse.py:2351
+#: argparse.py:2400
 #, python-format
 msgid "unexpected option string: %s"
 msgstr "literal de opción inesperado: %s"
 
-#: ../../cpython/Lib/argparse.py:2550
+#: argparse.py:2536
 #, python-format
 msgid "%r is not callable"
 msgstr "%r no es invocable"
 
-#: ../../cpython/Lib/argparse.py:2566
+#: argparse.py:2552
 #, python-format
 msgid "invalid %(type)s value: %(value)r"
 msgstr "valor %(type)s inválido: %(value)r"
 
-#: ../../cpython/Lib/argparse.py:2577
+#: argparse.py:2567
 #, python-format
 msgid "invalid choice: %(value)r (choose from %(choices)s)"
 msgstr "opción inválida: %(value)r (elegir entre %(choices)s)"
 
-#: ../../cpython/Lib/argparse.py:2655
+#: argparse.py:2645
 #, python-format
 msgid "%(prog)s: error: %(message)s\n"
 msgstr "%(prog)s: error: %(message)s\n"
+
+#: argparse.py:2649
+#, python-format
+msgid "%(prog)s: warning: %(message)s\n"
+msgstr "%(prog)s: aviso: %(message)s\n"
