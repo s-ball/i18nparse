@@ -1,0 +1,220 @@
+# Translations meant for Python's `argparse` module.
+# This file is published under the MIT License.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: i18nparse 1.0.0-pre4\n"
+"Report-Msgid-Bugs-To: s-ball@laposte.net\n"
+"POT-Creation-Date: 2025-02-17 14:45+0100\n"
+"PO-Revision-Date: 2025-03-02 06:12+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <(nothing)>\n"
+"Language: ka\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
+
+#: argparse.py:226
+#, python-format
+msgid "%(heading)s:"
+msgstr "%(heading)s:"
+
+#: argparse.py:297
+msgid "usage: "
+msgstr "გამოყენება: "
+
+#: argparse.py:673
+#, python-format
+msgid " (default: %(default)s)"
+msgstr " (ნაგულისხმევი: %(default)s)"
+
+#: argparse.py:735
+#, python-format
+msgid "argument %(argument_name)s: %(message)s"
+msgstr "არგუმენტი %(argument_name)s: %(message)s"
+
+#: argparse.py:844
+msgid ".__call__() not defined"
+msgstr ".__call__() აღწერილი არაა"
+
+#: argparse.py:1135
+msgid "show program's version number and exit"
+msgstr "პროგრამის ვერსიის ნომრის ჩვენება და გასვლა"
+
+#: argparse.py:1198
+#, python-format
+msgid "conflicting subparser: %s"
+msgstr "შეუთავსებელი ქვედამმუშავებელი: %s"
+
+#: argparse.py:1202
+#, python-format
+msgid "conflicting subparser alias: %s"
+msgstr "შეუთავსებელი ქვედამმუშავებლის ფსევდონიმი: %s"
+
+#: argparse.py:1241
+#, python-format
+msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
+msgstr "უცნობი დამმუშავებელი %(parser_name)r (არჩევანი: %(choices)s)"
+
+#: argparse.py:1245
+#, python-format
+msgid "command '%(parser_name)s' is deprecated"
+msgstr "ბრძანება '%(parser_name)s' მოძველებულია"
+
+#: argparse.py:1306
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr "არგუმენტი \"-\" რეჟიმით %r"
+
+#: argparse.py:1315
+#, python-format
+msgid "can't open '%(filename)s': %(error)s"
+msgstr "'%(filename)s' ვერ გავხსენი: %(error)s"
+
+#: argparse.py:1526
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr "ქმედებების შერწმის შეცდომა - ორი ჯგუფის სახელია %r"
+
+#: argparse.py:1568
+msgid "'required' is an invalid argument for positionals"
+msgstr "'required' არასწორი არგუმენტია პოზიცირებისთვის"
+
+#: argparse.py:1589
+#, python-format
+msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
+msgstr "არასწორი პარამეტრების სტრიქონი %(option)r: უნდა იწყებოდეს სიმბოლოთი %(prefix_chars)r"
+
+#: argparse.py:1607
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr "dest= აუცილებელია %r -ის მსგავსი პარამეტრებისთვის"
+
+#: argparse.py:1624
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr "არასწორი conflict_resolution-ის მნიშვნელობა: %r"
+
+#: argparse.py:1642
+#, python-format
+msgid "conflicting option string: %s"
+msgid_plural "conflicting option strings: %s"
+msgstr[0] "შეუთავსებელი პარამეტრების სტრიქონი: %s"
+msgstr[1] "შეუთავსებელი პარამეტრების სტრიქონი: %s"
+
+#: argparse.py:1717
+msgid "mutually exclusive arguments must be optional"
+msgstr "ურთიერთგამომრიცხავი არგუმენტები არასავალდებულო უნდა იყოს"
+
+#: argparse.py:1794
+msgid "positional arguments"
+msgstr "პოზიციური არგუმენტები"
+
+#: argparse.py:1795
+msgid "options"
+msgstr "პარამეტრები"
+
+#: argparse.py:1810
+msgid "show this help message and exit"
+msgstr "ამ დახმარების ჩვენება და გასვლა"
+
+#: argparse.py:1839
+msgid "cannot have multiple subparser arguments"
+msgstr "ერთზე მეტი ქვედამმუშავებლის პარამეტრი ვერ გექნებათ"
+
+#: argparse.py:1845
+msgid "subcommands"
+msgstr "ქვებრძანებები"
+
+#: argparse.py:1891 argparse.py:2454
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr "უცნობი არგუმენტები: %s"
+
+#: argparse.py:1997
+#, python-format
+msgid "not allowed with argument %s"
+msgstr "დაუშვებელია არგუმენტით %s"
+
+#: argparse.py:2016
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "გაურკვეველი პარამეტრი: %(option)s შეიძლება იყოს %(matches)s"
+
+#: argparse.py:2048 argparse.py:2080
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr "გამოტოვებულია მკაფიო არგუმენტი %r"
+
+#: argparse.py:2100
+#, python-format
+msgid "option '%(option)s' is deprecated"
+msgstr "პარამეტრი '%(option)s' მოძველებულია"
+
+#: argparse.py:2132
+#, python-format
+msgid "argument '%(argument_name)s' is deprecated"
+msgstr "არგუმენტი '%(argument_name)s' მოძველებულია"
+
+#: argparse.py:2225
+#, python-format
+msgid "the following arguments are required: %s"
+msgstr "აუცილებელია შემდეგი არგუმენტები: %s"
+
+#: argparse.py:2240
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr "აუცილებელია ერთ-ერთი არგუმენტი: %s"
+
+#: argparse.py:2284
+msgid "expected one argument"
+msgstr "მოველოდი ერთ არგუმენტს"
+
+#: argparse.py:2285
+msgid "expected at most one argument"
+msgstr "მოველოდი მაქს, ერთ არგუმენტს"
+
+#: argparse.py:2286
+msgid "expected at least one argument"
+msgstr "მოველოდი მინ. ერთ არგუმენტს"
+
+#: argparse.py:2290
+#, python-format
+msgid "expected %s argument"
+msgid_plural "expected %s arguments"
+msgstr[0] "მოველოდი %s არგუმენტს"
+msgstr[1] "მოველოდი %s არგუმენტს"
+
+#: argparse.py:2400
+#, python-format
+msgid "unexpected option string: %s"
+msgstr "მოულოდნელი პარამეტრების სტრიქონი: %s"
+
+#: argparse.py:2536
+#, python-format
+msgid "%r is not callable"
+msgstr "%r გამოძახებადი არაა"
+
+#: argparse.py:2552
+#, python-format
+msgid "invalid %(type)s value: %(value)r"
+msgstr "არასწორი %(type)s-ის მნიშვნელობა: %(value)r"
+
+#: argparse.py:2567
+#, python-format
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr "არასწორი არჩევანი: %(value)r (აირჩიეთ სიიდან %(choices)s)"
+
+#: argparse.py:2645
+#, python-format
+msgid "%(prog)s: error: %(message)s\n"
+msgstr "%(prog)s: შეცდომა: %(message)s\n"
+
+#: argparse.py:2649
+#, python-format
+msgid "%(prog)s: warning: %(message)s\n"
+msgstr "%(prog)s: გაფრთხილება: %(message)s\n"
