@@ -25,7 +25,7 @@ msgstr "%(heading)s :"
 
 #: argparse.py:297 argparse.py:296
 msgid "usage: "
-msgstr "usage : "
+msgstr "utilisation : "
 
 #: argparse.py:673
 #, python-format
